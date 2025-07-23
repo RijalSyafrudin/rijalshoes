@@ -1,0 +1,269 @@
+/* ===== PALET WARNA MODERN & ELEGAN ===== */
+:root {
+    --primary-color: #3A86FF;  /* Biru Elektrik */
+    --accent-color: #FFBE0B;   /* Emas Hangat */
+    --dark-color: #1D2D44;     /* Biru Dongker Gelap */
+    --light-bg: #F8F9FA;
+    --white-color: #FFFFFF;
+}
+
+/* ===== GAYA DASAR & FONT ===== */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding-top: 76px; /* Menyesuaikan dengan tinggi navbar */
+    background-color: var(--white-color);
+}
+
+/* ===== NAVBAR & LOGO ===== */
+.navbar {
+    background: var(--dark-color) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(58, 134, 255, 0.2);
+    transition: background 0.4s ease, box-shadow 0.4s ease;
+}
+
+.navbar.scrolled {
+    background: rgba(29, 45, 68, 0.9) !important;
+    box-shadow: 0 6px 30px rgba(0,0,0,0.2);
+}
+
+/* Perbaikan Logo Teks */
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.8rem; /* Ukuran disesuaikan agar lebih rapi */
+    color: var(--white-color) !important;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand span {
+    color: var(--primary-color) !important;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+    color: var(--white-color) !important;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7) !important;
+    transition: all 0.3s ease;
+    padding: 8px 16px !important;
+    border-radius: 8px;
+    margin: 0 5px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--white-color) !important;
+    background: rgba(58, 134, 255, 0.15);
+}
+
+.navbar-icons a {
+    color: var(--white-color) !important;
+    margin: 0 8px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-icons a:hover {
+    color: var(--primary-color) !important;
+    transform: scale(1.15);
+}
+
+/* ===== HERO SECTION ===== */
+.hero-section {
+    /* Gradien overlay yang lebih halus dan natural */
+    background: linear-gradient(to right, rgba(29, 45, 68, 0.95), rgba(29, 45, 68, 0.6)), url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 3.8rem;
+    font-weight: 700;
+    color: var(--white-color);
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    line-height: 1.2;
+}
+
+.hero-title span {
+    color: var(--primary-color);
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: rgba(255,255,255,0.85);
+    margin: 1.5rem 0;
+    max-width: 500px;
+}
+
+.hero-image {
+    /* Menghilangkan gambar duplikat, efek visual kini dikontrol oleh background section */
+    display: none; 
+}
+
+.btn-cta {
+    background: var(--primary-color);
+    border: none;
+    color: var(--white-color);
+    font-weight: 600;
+    padding: 14px 35px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(58, 134, 255, 0.3);
+}
+
+.btn-cta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(58, 134, 255, 0.4);
+    background: var(--accent-color);
+    color: var(--dark-color);
+}
+
+/* ===== GAYA KONTEN UMUM ===== */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    color: #6c757d;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+h3.text-primary {
+    color: var(--primary-color) !important;
+}
+
+/* ===== KARTU PRODUK ===== */
+.product-card {
+    border: 1px solid #e9ecef;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    border-color: var(--primary-color);
+}
+
+.product-card .card-img-top {
+    height: 200px; /* Disesuaikan untuk konsistensi */
+    object-fit: cover;
+}
+
+.product-price {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.btn-outline-primary {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+.btn-outline-primary:hover {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+/* ===== FOOTER MODERN & MINIMALIS ===== */
+.footer {
+    background: var(--dark-color);
+    color: var(--white-color);
+}
+
+.footer-brand {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--white-color) !important;
+}
+.footer-brand span {
+    color: var(--primary-color) !important;
+}
+
+.social-links a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* ===== RESPONSIVITAS ===== */
+@media (max-width: 991px) {
+    .navbar-nav {
+        background: var(--dark-color);
+        border-radius: 8px;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+}
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 70vh;
+        text-align: center;
+    }
+    .hero-title {
+        font-size: 2.8rem;
+    }
+    .hero-subtitle {
+        font-size: 1.1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero-content {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn-cta {
+        padding: 12px 28px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Penyesuaian lain-lain untuk Modal dan Form tetap sama karena sudah baik */
+.search-modal .modal-content { border: none; border-radius: 15px; background: #f8f9fa; }
+.search-modal .modal-header { border: none; background: var(--primary-color); color: white; border-radius: 15px 15px 0 0; }
+.search-input { border: 2px solid #e9ecef; border-radius: 25px; padding: 15px 25px; font-size: 1.1rem; }
+.search-input:focus { border-color: var(--primary-color); box-shadow: 0 0 0 0.25rem rgba(58, 134, 255, 0.25); }
+.search-results { max-height: 300px; overflow-y: auto; }
+.search-item { border: none; border-radius: 10px; margin-bottom: 10px; transition: all 0.3s ease; }
+.search-item:hover { background: rgba(58, 134, 255, 0.1); transform: translateX(5px); }
+.contact-form { background: white; border-radius: 15px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+.form-floating .form-control { border-radius: 10px; }
+.form-floating .form-control:focus { border-color: var(--primary-color); box-shadow: 0 0 0 0.25rem rgba(58, 134, 255, 0.25); }
+.btn-submit { background: var(--primary-color); border: none; padding: 12px 30px; border-radius: 50px; }
+.btn-submit:hover { background: #2b70e0; }
